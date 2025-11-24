@@ -1,0 +1,401 @@
+EQUIPMENT SPECIFICATIONS AND COST DATABASE
+==========================================
+Last Updated: November 1, 2024
+Compiled by: Thomas Wilson, Director of Maintenance
+Document Classification: CONFIDENTIAL - OPERATIONS
+
+ESPRESSO MACHINES:
+
+La Marzocco GB5 S (Premium Model)
+- Unit Cost: $18,500
+- Installation Cost: $2,500
+- Annual Maintenance: $1,200
+- Energy Consumption: 5,200 kWh/year
+- Service Life: 7 years
+- Warranty: 2 years parts, 1 year labor
+- Key Features: Dual boiler, PID temperature control, auto-clean
+- Monthly Cleaning Cost: $45 (chemicals, filters)
+- Downtime per Year: 8 hours (scheduled)
+- Repair Costs (Avg): $650/year
+- Replacement Parts Budget: $300/year
+
+La Marzocco Linea PB (Standard Model)
+- Unit Cost: $14,200
+- Installation Cost: $1,800
+- Annual Maintenance: $950
+- Energy Consumption: 4,800 kWh/year
+- Service Life: 6 years
+- Warranty: 2 years parts, 1 year labor
+- Key Features: Single boiler, thermal stability, dual steam wands
+- Monthly Cleaning Cost: $35
+- Downtime per Year: 12 hours
+- Repair Costs (Avg): $520/year
+- Replacement Parts Budget: $250/year
+
+COFFEE BREWERS:
+
+Bunn VP17-2 (2-Burner)
+- Unit Cost: $2,800
+- Installation Cost: $400
+- Annual Maintenance: $350
+- Energy Consumption: 1,200 kWh/year
+- Service Life: 5 years
+- Warranty: 3 years parts
+- Key Features: Programmable batches, hot water faucet
+- Monthly Cleaning Cost: $20
+- Downtime per Year: 4 hours
+- Repair Costs (Avg): $180/year
+- Replacement Parts Budget: $100/year
+
+Bunn AXIOM-DTB-3 (Digital)
+- Unit Cost: $4,200
+- Installation Cost: $600
+- Annual Maintenance: $450
+- Energy Consumption: 1,400 kWh/year
+- Service Life: 7 years
+- Warranty: 3 years parts
+- Key Features: Digital controls, energy saver mode
+- Monthly Cleaning Cost: $25
+- Downtime per Year: 3 hours
+- Repair Costs (Avg): $200/year
+- Replacement Parts Budget: $120/year
+
+GRINDERS:
+
+Mahlkönig E65S (Premium)
+- Unit Cost: $3,800
+- Installation Cost: $300
+- Annual Maintenance: $400
+- Energy Consumption: 800 kWh/year
+- Service Life: 4 years
+- Warranty: 2 years parts
+- Key Features: 65mm burrs, stepless adjustment, digital display
+- Monthly Cleaning Cost: $30 (burrs cleaning)
+- Downtime per Year: 6 hours
+- Repair Costs (Avg): $280/year
+- Replacement Parts Budget: $350/year (burrs every 18 months)
+
+Mahlkönig K30 Vario (Standard)
+- Unit Cost: $2,600
+- Installation Cost: $200
+- Annual Maintenance: $320
+- Energy Consumption: 650 kWh/year
+- Service Life: 3 years
+- Warranty: 2 years parts
+- Key Features: 65mm burrs, portafilter holder, digital timer
+- Monthly Cleaning Cost: $25
+- Downtime per Year: 8 hours
+- Repair Costs (Avg): $220/year
+- Replacement Parts Budget: $280/year
+
+REFRIGERATION EQUIPMENT:
+
+True Manufacturing GDM-72 (Glass Door Merchandiser)
+- Unit Cost: $3,500
+- Installation Cost: $500
+- Annual Maintenance: $600
+- Energy Consumption: 2,400 kWh/year
+- Service Life: 10 years
+- Warranty: 3 years parts, 1 year labor
+- Key Features: Triple pane glass, LED lighting, forced air cooling
+- Monthly Cleaning Cost: $15
+- Downtime per Year: 24 hours (compressor issues)
+- Repair Costs (Avg): $400/year
+- Replacement Parts Budget: $200/year
+
+Turbo Air TST-72 (Sandwich Prep Table)
+- Unit Cost: $4,800
+- Installation Cost: $600
+- Annual Maintenance: $750
+- Energy Consumption: 3,200 kWh/year
+- Service Life: 8 years
+- Warranty: 3 years parts, 2 years labor
+- Key Features: Stainless steel, 6 pan capacity, digital controls
+- Monthly Cleaning Cost: $20
+- Downtime per Year: 16 hours
+- Repair Costs (Avg): $550/year
+- Replacement Parts Budget: $250/year
+
+POS SYSTEMS:
+
+Toast POS Terminal
+- Unit Cost: $1,200
+- Installation Cost: $400 (software setup)
+- Annual Maintenance: $600 (software license)
+- Energy Consumption: 200 kWh/year
+- Service Life: 5 years
+- Warranty: 1 year parts
+- Key Features: Touch screen, integrated payments, inventory tracking
+- Monthly Software Cost: $50
+- Downtime per Year: 2 hours (software updates)
+- Repair Costs (Avg): $150/year
+- Replacement Parts Budget: $100/year
+
+Kitchen Display System (KDS)
+- Unit Cost: $2,800
+- Installation Cost: $600
+- Annual Maintenance: $400
+- Energy Consumption: 300 kWh/year
+- Service Life: 6 years
+- Warranty: 2 years parts
+- Key Features: Order routing, timing, bump bar
+- Monthly Software Cost: $30
+- Downtime per Year: 4 hours
+- Repair Costs (Avg): $200/year
+- Replacement Parts Budget: $150/year
+
+HVAC SYSTEMS:
+
+Carrier Rooftop Unit (5-ton)
+- Unit Cost: $18,000
+- Installation Cost: $8,000
+- Annual Maintenance: $1,800
+- Energy Consumption: 8,000 kWh/year
+- Service Life: 15 years
+- Warranty: 5 years parts
+- Key Features: High efficiency, smart thermostat, zone control
+- Monthly Filter Cost: $25
+- Downtime per Year: 12 hours (scheduled maintenance)
+- Repair Costs (Avg): $1,200/year
+- Replacement Parts Budget: $500/year
+
+Water Filtration Systems:
+
+Everpure PBS-400 (Espresso Machine)
+- Unit Cost: $1,200
+- Installation Cost: $300
+- Annual Maintenance: $800 (filter replacements)
+- Service Life: 5 years (system), 6 months (filters)
+- Warranty: 1 year parts
+- Key Features: Scale inhibition, chlorine reduction
+- Filter Cost: $150 every 6 months
+- Downtime per Year: 2 hours (filter changes)
+- Repair Costs (Avg): $100/year
+- Replacement Parts Budget: $150/year
+
+ICEMAKERS:
+
+Manitowoc IDT-1800A (Full Dice)
+- Unit Cost: $4,200
+- Installation Cost: $700
+- Annual Maintenance: $650
+- Energy Consumption: 3,600 kWh/year
+- Service Life: 8 years
+- Warranty: 3 years parts, 2 years labor
+- Key Features: Air-cooled, 1,800 lbs/day production
+- Monthly Cleaning Cost: $40 (sanitation)
+- Downtime per Year: 24 hours (deep cleaning)
+- Repair Costs (Avg): $450/year
+- Replacement Parts Budget: $200/year
+
+MICROWAVES (Break Room):
+
+Panasonic Commercial Microwave
+- Unit Cost: $650
+- Installation Cost: $100
+- Annual Maintenance: $200
+- Energy Consumption: 400 kWh/year
+- Service Life: 3 years
+- Warranty: 1 year parts
+- Key Features: 1200W, stainless steel interior
+- Monthly Cleaning Cost: $10
+- Downtime per Year: 8 hours
+- Repair Costs (Avg): $120/year
+- Replacement Parts Budget: $50/year
+
+PER-STORE EQUIPMENT INVENTORY STANDARD:
+
+Full-Scale Store (2,000+ sq ft):
+- 2 Espresso Machines (1 premium, 1 standard): $32,700
+- 2 Coffee Brewers: $7,000
+- 4 Grinders: $12,800
+- 2 Refrigeration Units: $8,300
+- 1 Sandwich Prep Table: $5,400
+- 2 POS Terminals: $2,400
+- 1 KDS Display: $2,800
+- 1 Ice Machine: $4,900
+- 1 Water Filtration System: $1,500
+- 1 Microwave: $750
+- Subtotal Equipment: $78,550
+- Installation Costs: $15,200
+- Total Initial Investment: $93,750
+
+Medium Store (1,000-2,000 sq ft):
+- 2 Espresso Machines (standard): $28,400
+- 1 Coffee Brewer: $4,200
+- 3 Grinders: $8,400
+- 1 Refrigeration Unit: $4,000
+- 1 Sandwich Prep Table: $5,400
+- 1 POS Terminal: $1,200
+- 1 Ice Machine: $4,900
+- 1 Water Filtration System: $1,500
+- 1 Microwave: $750
+- Subtotal Equipment: $58,750
+- Installation Costs: $10,600
+- Total Initial Investment: $69,350
+
+Small Store/Kiosk (<1,000 sq ft):
+- 1 Espresso Machine (standard): $14,200
+- 1 Coffee Brewer: $4,200
+- 2 Grinders: $5,200
+- 1 Refrigeration Unit: $4,000
+- 1 POS Terminal: $1,200
+- 1 Water Filtration System: $1,500
+- 1 Microwave: $650
+- Subtotal Equipment: $30,950
+- Installation Costs: $5,200
+- Total Initial Investment: $36,150
+
+ANNUAL OPERATING COSTS PER STORE TYPE:
+
+Full-Scale Store Annual Costs:
+- Maintenance Labor: $8,500
+- Replacement Parts: $2,200
+- Cleaning Supplies: $1,800
+- Filter Replacements: $1,200
+- Energy Costs: $28,000
+- Water Treatment: $900
+- Software Licenses: $600
+- Total Annual Operating Cost: $43,200
+
+Medium Store Annual Costs:
+- Maintenance Labor: $6,200
+- Replacement Parts: $1,600
+- Cleaning Supplies: $1,300
+- Filter Replacements: $900
+- Energy Costs: $20,000
+- Water Treatment: $700
+- Software Licenses: $480
+- Total Annual Operating Cost: $31,180
+
+Small Store Annual Costs:
+- Maintenance Labor: $4,200
+- Replacement Parts: $1,100
+- Cleaning Supplies: $900
+- Filter Replacements: $600
+- Energy Costs: $14,000
+- Water Treatment: $500
+- Software Licenses: $360
+- Total Annual Operating Cost: $21,660
+
+TOTAL EQUIPMENT INVESTMENT (GLOBAL):
+
+Current Fleet (as of Q3 2024):
+- 1,408 stores (weighted average)
+- 2,216 Espresso Machines: $34,200,000 (current value)
+- 1,876 Coffee Brewers: $6,800,000
+- 3,842 Grinders: $9,600,000
+- 2,134 Refrigeration Units: $8,500,000
+- 1,208 Sandwich Prep Tables: $6,500,000
+- 2,508 POS Terminals: $3,000,000
+- 1,089 Ice Machines: $4,300,000
+- 1,408 Water Filtration Systems: $1,700,000
+- 1,408 Microwaves: $900,000
+
+Total Current Equipment Value: $75,500,000
+Annual Global Maintenance Budget: $45,200,000
+Annual Global Energy Costs: $32,800,000
+
+LIFECYCLE REPLACEMENT SCHEDULE:
+
+2025 Replacements (Budget: $18,700,000):
+- 280 Espresso Machines (6+ years old): $5,200,000
+- 352 Grinders (4+ years old): $1,300,000
+- 200 POS Terminals (5+ years old): $300,000
+- 141 Refrigeration Units (10+ years old): $600,000
+- 200 Water Systems (5+ years old): $300,000
+- 150 Microwaves (3+ years old): $120,000
+- Installation and Upgrades: $10,880,000
+
+2026 Projections:
+- Equipment replacement: $22,000,000
+- Technology upgrades: $5,000,000
+- Energy efficiency improvements: $3,000,000
+- Total: $30,000,000
+
+SUPPLIER CONTRACTS:
+
+Primary Equipment Vendors:
+- La Marzocco: $25,000,000 annually (espresso machines, service)
+- Bunn: $8,000,000 annually (coffee brewers, grinders)
+- True Manufacturing: $12,000,000 annually (refrigeration)
+- Toast: $4,000,000 annually (POS systems)
+- Carrier: $6,000,000 annually (HVAC systems)
+
+Service Level Agreements:
+- Emergency Response: 2 hours (critical equipment)
+- Routine Service: 48 hours
+- Preventive Maintenance: Monthly schedule
+- Parts Availability: 98% in stock
+- Technician Certification: 100% manufacturer certified
+
+BUDGET ANALYSIS:
+
+Cost Per Store (Annual Average):
+- Equipment Depreciation: $12,500
+- Maintenance: $32,100
+- Energy: $23,300
+- Total Equipment-Related Costs: $67,900
+
+Cost Per Customer (Annual):
+- Equipment Cost Allocation: $0.64 per visit
+- Maintenance Cost: $0.30 per visit
+- Energy Cost: $0.22 per visit
+- Total: $1.16 per customer
+
+EFFICIENCY METRICS:
+
+Equipment Uptime Target: 99.2%
+Current Performance: 99.1%
+Industry Average: 97.5%
+
+Energy Consumption:
+- Target Reduction: 15% by 2026
+- Current Year Progress: 8% reduction
+- LED Lighting Conversion: 78% complete
+- Smart Thermostats: 45% installed
+
+Maintenance Productivity:
+- Preventive vs Reactive Maintenance: 78% preventive
+- Mean Time Between Failures: 2,347 hours
+- Mean Time To Repair: 2.3 hours
+- First-Time Fix Rate: 89%
+
+RISK ASSESSMENT:
+
+High-Risk Equipment:
+- Espresso Machines (Aging fleet, high usage)
+- HVAC Systems (Climate dependency)
+- Refrigeration (Food safety critical)
+
+Replacement Priority Matrix:
+1. Critical Failure Risk: Espresso Machines
+2. Food Safety Risk: Refrigeration
+3. Customer Experience Risk: POS Systems
+4. Operational Risk: Coffee Brewers
+5. Comfort Risk: HVAC Systems
+
+FUTURE TECHNOLOGY ROADMAP:
+
+2025 Initiatives:
+- IoT Equipment Monitoring: $3,200,000
+- Predictive Maintenance AI: $1,800,000
+- Energy Management Systems: $2,500,000
+- Automated Inventory Tracking: $1,200,000
+
+2026 Initiatives:
+- Smart Kitchen Integration: $4,000,000
+- Cloud-Based Management: $2,000,000
+- Enhanced Mobile Integration: $1,500,000
+- Sustainability Technologies: $3,000,000
+
+Contact Information:
+Thomas Wilson, Director of Maintenance
+thomas.wilson@coffeeempire.com
+Phone: (555) 234-5700
+
+Emergency 24/7 Hotline: (555) 234-5702
+
+Document Classification: CONFIDENTIAL - FINANCIAL
+Access Level: Senior Management Only
+Last Updated: November 1, 2024
