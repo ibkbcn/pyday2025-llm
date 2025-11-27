@@ -39,6 +39,12 @@ def pydantic_to_tool_params(
         # Remove title to avoid issues with some LLM parsers
         del model_schema["title"]
 
+    # For strict mode, all properties must be in required array
+    # and additionalProperties must be false
+    if "properties" in model_schema:
+        model_schema["required"] = list(model_schema["properties"].keys())
+    model_schema["additionalProperties"] = False
+
     return {
         "name": name,
         "description": description,
