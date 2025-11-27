@@ -6,6 +6,7 @@ from typing import Any
 from typing import TypeAlias
 
 from openai import OpenAI
+from rich.console import Console
 
 from pyday2025_llm.constants import MODEL_NAME
 from pyday2025_llm.tools import GrepPatternTool
@@ -26,6 +27,7 @@ class Agent:
         max_loops: int = 50,
         tools: list[dict] | None = None,
         base_path: Path | None = None,
+        debug: bool = False,
     ):
         self.client = client
         self.model_name = model_name
@@ -34,6 +36,8 @@ class Agent:
         self.tools = tools or []
         self.base_path = base_path or Path("data")
         self.base_path_abs = self.base_path.resolve()
+        self.debug = debug
+        self.console = Console()
 
         self.SYSTEM_PROMPT = f"""You are a helpful assistant.
 
@@ -73,33 +77,53 @@ For example, to list the folder f{self.base_path / "some_folder"}, you must only
         )
         return response
 
-    def run(self, user_input: str):
-        # Initialize conversation with system prompt and user input
-        self.conversation_history = [
-            {"role": "system", "content": self.SYSTEM_PROMPT},
-            {"role": "user", "content": user_input},
-        ]
+    def save_conversation(self):
+        """Save conversation to conversation.json if debug mode is enabled."""
+        if self.debug:
+            with open("conversation.json", "w") as f:
+                json.dump(self.conversation_history, f, indent=2)
+
+    def run(self, user_input: str | None = None):
+        # Initialize conversation with system prompt if starting fresh
+        if not self.conversation_history:
+            self.conversation_history = [
+                {"role": "system", "content": self.SYSTEM_PROMPT},
+            ]
+
+        # Add user input if provided
+        if user_input:
+            self.conversation_history.append({"role": "user", "content": user_input})
+            # self.console.print(f"\n[blue]You[/blue]: {user_input}")
+            self.save_conversation()
 
         current_loop = 0
 
         while current_loop < self.max_loops:
             current_loop += 1
-            print(f"Loop iteration {current_loop}/{self.max_loops}")
 
             response = self.one_turn()
             message = response.choices[0].message
 
             # Append assistant message to conversation
             self.conversation_history.append(message.model_dump())
+            self.save_conversation()
+
+            # Print assistant text response if present
+            if message.content:
+                self.console.print(f"\n[yellow]Assistant[/yellow]: {message.content}")
 
             # Check if the model wants to call tools
             if message.tool_calls:
                 for tool_call in message.tool_calls:
                     name = tool_call.function.name
                     arguments = json.loads(tool_call.function.arguments)
-                    print(f"  Calling tool: {name}({arguments})")
+                    self.console.print(
+                        f"\n    [green]tool[/green]: {name}({json.dumps(arguments)})"
+                    )
 
                     result = self.call_tool(name, arguments)
+                    truncated = result[:200] + "..." if len(result) > 200 else result
+                    self.console.print(f"        [dim]result[/dim]: {truncated}")
 
                     # Append tool result to conversation
                     self.conversation_history.append(
@@ -109,9 +133,9 @@ For example, to list the folder f{self.base_path / "some_folder"}, you must only
                             "content": result,
                         }
                     )
+                    self.save_conversation()
             else:
-                # No tool calls, model has finished
-                print("Agent finished.")
+                # No tool calls, model has finished this turn
                 return message.content
 
         print("Max loops reached, stopping.")
@@ -127,6 +151,7 @@ def main() -> int:
     max_loops = args.max_loops
     model_name = args.model_name
     base_path = Path(args.base_path)
+    debug = args.debug
 
     tools = [ListFilesTool, ReadFileTool, GrepPatternTool]
 
@@ -136,17 +161,27 @@ def main() -> int:
         max_loops=max_loops,
         tools=tools,
         base_path=base_path,
+        debug=debug,
     )
 
-    # Get user input from CLI argument or prompt
+    console = Console()
+    console.print("Chat with the agent (use 'ctrl-c' to quit)")
+
+    # If user input provided via CLI, run once and exit
     if args.user_input:
-        user_input = args.user_input
-    else:
-        user_input = input("What can I help you with? > ")
+        agent.run(args.user_input)
+        return 0
 
-    result = agent.run(user_input)
-
-    print(f"\nResult: {result}")
+    # Multi-turn conversation loop
+    while True:
+        try:
+            user_input = console.input("\n[blue]You[/blue]: ")
+            if not user_input.strip():
+                continue
+            agent.run(user_input)
+        except (KeyboardInterrupt, EOFError):
+            console.print("\nGoodbye!")
+            break
 
     return 0
 
@@ -178,6 +213,11 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default=None,
         help="User input to start with. If not provided, will prompt interactively.",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable debug mode. Saves conversation to conversation.json after each turn.",
     )
 
     return parser.parse_args()
