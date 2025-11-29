@@ -112,6 +112,7 @@ def main() -> int:
         client=client,
         max_loops=max_loops,
         base_path=base_path,
+        tools=[ListFilesToolDefinition],
     )
 
     console = Console()
