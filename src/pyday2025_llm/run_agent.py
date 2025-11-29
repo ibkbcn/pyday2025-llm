@@ -11,7 +11,10 @@ from rich.console import Console
 from pyday2025_llm.constants import MODEL_NAME
 from pyday2025_llm.tools import ListFilesParams
 from pyday2025_llm.tools import ListFilesToolDefinition
+from pyday2025_llm.tools import ReadFileParams
+from pyday2025_llm.tools import ReadFileToolDefinition
 from pyday2025_llm.tools import list_files
+from pyday2025_llm.tools import read_file
 
 # from pyday2025_llm.tools import list_files
 
@@ -78,9 +81,13 @@ For example, to list the folder f{self.base_path / "some_folder"}, you must only
     # TASK: Add validation to call_tool
 
     def call_tool(self, tool_name: str, parameters: dict) -> Any:
+        validated_params: Any
         if tool_name == "list_files":
             validated_params = ListFilesParams.model_validate(parameters)
             result = list_files(Path(validated_params.folder))
+        elif tool_name == "read_file":
+            validated_params = ReadFileParams.model_validate(parameters)
+            result = read_file(Path(validated_params.file_path))
         else:
             return "Unknown tool"
 
@@ -163,7 +170,7 @@ def main() -> int:
         client=client,
         max_loops=max_loops,
         base_path=base_path,
-        tools=[ListFilesToolDefinition],
+        tools=[ListFilesToolDefinition, ReadFileToolDefinition],
     )
 
     console = Console()

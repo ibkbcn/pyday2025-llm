@@ -85,6 +85,43 @@ def list_files(folder: Path) -> ToolResult:
 
 # TODO (1): Implement read_file tool
 
+
+class ReadFileParams(BaseModel):
+    file_path: str
+    line_start: int | None = None
+    line_end: int | None = None
+
+
+ReadFileToolDefinition = pydantic_to_tool_params(
+    name="read_file",
+    description="Read a file's content, optionally specifying line range.",
+    parameters_model=ReadFileParams,
+)
+
+
+def read_file(file_path: Path) -> ToolResult:
+    """Read a file's content, optionally specifying line range."""
+
+    if not file_path.exists():
+        return ToolResult(
+            status_code=1,
+            output="",
+            error_message=f"File not found: {file_path}",
+        )
+
+    if not file_path.is_file():
+        return ToolResult(
+            status_code=2,
+            output="",
+            error_message=f"Path is not a file: {file_path}",
+        )
+
+    return ToolResult(
+        status_code=0,
+        output=file_path.read_text(),
+    )
+
+
 # TODO (2): Improve read_file error codes
 
 # TODO (3): Implement grep_pattern tool
